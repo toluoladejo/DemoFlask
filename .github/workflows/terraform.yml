@@ -57,6 +57,11 @@ jobs:
     name: 'Terraform'
     runs-on: ubuntu-latest
     environment: production
+    jobs:
+  terraform:
+    defaults:
+      run:
+        working-directory: $DIR_OF_CHOICE
 
     # Use the Bash shell regardless whether the GitHub Actions runner is ubuntu-latest, macos-latest, or windows-latest
     defaults:
